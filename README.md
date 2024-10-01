@@ -17,5 +17,133 @@ Algunos ejemplos: "h1" para títulos o "p" para párrafos
 ElementoDeLinea1 ElementoDeLínea2
 
 Los elementos de bloque ocupan el 100vw
-ElementoDeBloque1
+ElementoDeBloque1 <br>
 ElementoDeBloque2
+
+## Clase 4 - 01/10/2024
+- Multimedia: 
+    &lt;img&gt;: El elemento esencial
+
+    Este es el elemento principal para mostrar imágenes en una página web.  Es un elemento vacío, lo que significa que no tiene etiqueta de cierre. Requiere al menos el atributo src para funcionar.
+
+    Atributos clave:
+        - src: Especifica la URL de la imagen.
+        - alt: Proporciona una descripción textual de la imagen para usuarios que no pueden verla (esencial para la accesibilidad y SEO).
+        - width: Define el ancho de la imagen en píxeles.
+        - height: Define el alto de la imagen en píxeles.
+        - loading="lazy": Permite la carga diferida de la imagen, mejorando el rendimiento de la página.
+- Audio:
+
+    &lt;audio&gt;: Etiqueta principal que define el reproductor de audio.
+    controls: Atributo que muestra los controles de reproducción (play, pausa, volumen, etc.).
+    &lt;source&gt;: Permite especificar diferentes fuentes de audio en distintos formatos para asegurar la compatibilidad con varios navegadores.
+    src: Indica la URL del archivo de audio.
+    type: Especifica el tipo MIME del archivo de audio (e.g., audio/mpeg para MP3, audio/ogg para Ogg).
+    Texto alternativo: Se muestra si el navegador no soporta la etiqueta <audio>.
+ 
+    Atributos importantes:
+
+        - autoplay: Inicia la reproducción automáticamente al cargar la página.
+        - loop: Repite el audio en bucle.
+        - muted: Silencia el audio por defecto.
+        - preload: Indica al navegador cómo debe precargar el audio:
+        - none: No precargar.
+        - metadata: Precargar solo los metadatos (e.g., duración).
+        - auto: Precargar el audio completo.
+
+- Iframes
+    El elemento &lt;iframe&gt; en HTML te permite incrustar otro documento HTML dentro del documento actual. Piensa en él como una ventana que muestra contenido de otra página web dentro de tu página.
+
+    Atributos:
+
+        src:  Este atributo es obligatorio y especifica la URL del documento que se va a mostrar en el iframe.
+
+        Ejemplo: src="https://www.ejemplo.com/pagina.html"
+        width y height:  Definen el ancho y alto del iframe en píxeles o porcentaje.
+
+        Ejemplo: width="500" height="300"
+        title:  Proporciona un título descriptivo para el iframe, que es importante para la accesibilidad.
+
+        Ejemplo: title="Mapa del sitio"
+        frameborder:  Controla si el iframe tiene un borde.  Puede ser "1" (con borde) o "0" (sin borde).
+
+        Ejemplo: frameborder="0"
+        allowfullscreen:  Permite que el contenido del iframe se muestre en pantalla completa si el contenido lo soporta.
+
+        Ejemplo: allowfullscreen
+        sandbox:  Habilita un conjunto de restricciones de seguridad para el contenido del iframe. Puedes especificar diferentes valores para controlar permisos como la ejecución de scripts, el acceso al DOM principal, etc.
+
+        Ejemplo: sandbox="allow-scripts allow-same-origin"
+        loading:  Indica al navegador cómo debe cargar el iframe:
+
+        eager: Carga el iframe inmediatamente (valor por defecto).
+        lazy: Carga el iframe de forma diferida, cuando el usuario se desplaza cerca de él.
+
+- Tablas
+        Las tablas en HTML se utilizan para organizar datos en filas y columnas. Aunque en el pasado se usaban para maquetar páginas web (algo que ahora se hace con CSS), su función principal es la presentación de información tabular.
+
+            1.  &lt;table&gt;:
+            Define la tabla. Todo el contenido de la tabla debe ir dentro de esta etiqueta.
+
+            2.  &lt;tr&gt;:
+            Define una fila dentro de la tabla.
+
+            3.  &lt;td&gt;:
+            Define una celda de datos dentro de una fila. Aquí es donde va el contenido de la celda (texto, imágenes, etc.).
+
+            4.  &lt;th&gt;:
+            Define una celda de encabezado dentro de una fila. Se utiliza para etiquetar las filas o columnas. El texto dentro de <th> se muestra en negrita por defecto.
+
+        Elementos adicionales:
+
+            &lt;caption&gt;: Define un título para la tabla. Se coloca justo después de la etiqueta &lt;table>.
+            &lt;thead&gt;: Agrupa las filas de encabezado de la tabla.
+            &lt;tbody&gt;: Agrupa las filas de datos de la tabla.
+            &lt;tfoot&gt;: Agrupa las filas de pie de página de la tabla.
+            &lt;col&gt; y &lt;colgroup&gt;: Se utilizan para definir propiedades para una o varias columnas.
+            Atributos útiles:
+
+            colspan: Atributo de &lt;td&gt; o &lt;th&gt; que permite que una celda ocupe varias columnas.
+            rowspan: Atributo de &lt;td&gt; o &lt;th&gt; que permite que una celda ocupe varias filas.
+            border: Atributo de &lt;table&gt; que define el grosor del borde de la tabla (en desuso, se recomienda usar CSS).
+
+- Formularios:
+
+Los formularios en HTML son esenciales para interactuar con los usuarios, permitiéndoles enviar información a un servidor web. Se utilizan para diversas tareas, como iniciar sesión, enviar comentarios, realizar compras y mucho más.
+
+Aquí te explico los elementos clave de un formulario en HTML:
+
+1. &lt;form&gt;:
+
+Define el formulario. Todos los elementos del formulario deben ir dentro de esta etiqueta.
+Atributos importantes:
+action: Especifica la URL del servidor donde se enviarán los datos del formulario.
+method: Define el método HTTP para enviar los datos (get o post).
+get: Los datos se envían en la URL.
+post: Los datos se envían en el cuerpo de la solicitud HTTP.
+2. Elementos de entrada:
+
+&lt;input&gt;:  Permite crear diferentes tipos de campos de entrada:
+
+text: Campo de texto de una sola línea.
+password: Campo de contraseña que oculta los caracteres.
+email: Campo para direcciones de correo electrónico.
+number: Campo para números.
+date: Campo para fechas.
+checkbox: Casilla de verificación.
+radio: Botón de opción.
+submit: Botón para enviar el formulario.
+reset: Botón para reiniciar los campos del formulario.
+file: Campo para seleccionar archivos.
+...y muchos más.
+&lt;textarea&gt;:  Crea un campo de texto de varias líneas.
+
+&lt;select&gt;:  Crea una lista desplegable.
+
+&lt;option&gt;:  Define las opciones dentro de una lista desplegable (&lt;select&gt;).
+
+&lt;button&gt;:  Crea un botón. Puedes especificar el tipo de botón con el atributo type (submit, reset, button).
+
+3. Etiquetas:
+
+&lt;label&gt;: Crea una etiqueta para un elemento de entrada. Es importante asociar la etiqueta con el elemento de entrada mediante el atributo for en la etiqueta y el atributo id en el elemento de entrada.
