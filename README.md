@@ -6,19 +6,167 @@ En la primer clase de introducción se vieron cosas como instalar VSCODE - Exten
 
 ## Clase 2 - 17/09/2024
 
-los archivos HTML, son documentos de maquetación para páginas web. las mismas usan etiquetas o tags. hay muchos tipos de etiquetas.
+### Etiquetas básicas de HTML
 
-Algunos ejemplos: "h1" para títulos o "p" para párrafos
+#### Etiquetas esenciales:
+
+* **`<!DOCTYPE html>`**: Define el tipo de documento HTML, asegurando que el navegador interprete correctamente la página.
+* **`<html>`**: Es la etiqueta raíz del documento HTML que envuelve todo el contenido de la página.
+* **`<head>`**: Contiene metadatos sobre el documento, como enlaces a archivos CSS, scripts o información de SEO.
+* **`<title>`**: Define el título del documento, que se muestra en la pestaña del navegador.
+* **`<body>`**: Contiene el contenido visible de la página web (texto, imágenes, etc.).
+
+#### Etiquetas de contenido:
+
+* **`<h1>` a `<h6>`**: Define encabezados de distintos niveles de importancia, donde `<h1>` es el más importante y `<h6>` el menos.
+* **`<p>`**: Define un párrafo de texto.
+* **`<br>`**: Inserta un salto de línea.
+* **`<hr>`**: Inserta una línea horizontal para dividir secciones.
+* **`<div>`**: Define una división o sección en el documento, útil para agrupar contenido y aplicarle estilos.
+* **`<span>`**: Define una sección dentro de una línea de texto, ideal para aplicar estilos en línea.
+* **`<pre>`**: Muestra texto preformateado, respetando espacios y saltos de línea tal como aparecen en el código fuente.
+* **`<blockquote>`**: Define una cita larga de texto, comúnmente usada para citas de fuentes externas.
+* **`<code>`**: Define un fragmento de código en línea, usado para mostrar ejemplos de código.
+
+#### Etiquetas de listas:
+
+* **`<ul>`**: Define una lista desordenada, comúnmente mostrada con viñetas.
+* **`<ol>`**: Define una lista ordenada, normalmente numerada.
+* **`<li>`**: Define un elemento de una lista.
+* **`<dl>`**: Define una lista de definiciones.
+* **`<dt>`**: Define un término en una lista de definiciones.
+* **`<dd>`**: Define la descripción o definición de un término en una lista de definiciones.
+
+#### Etiquetas de tablas:
+
+* **`<table>`**: Define una tabla en HTML.
+* **`<tr>`**: Define una fila dentro de una tabla.
+* **`<td>`**: Define una celda dentro de una fila en una tabla.
+* **`<th>`**: Define una celda de encabezado dentro de una tabla, generalmente alineada al centro o en negrita.
+* **`<caption>`**: Define un título o descripción para una tabla.
+
+#### Etiquetas de enlaces:
+
+* **`<a>`**: Define un enlace a otra página web o recurso, utilizando el atributo `href` para definir la URL de destino.
+  
+  ```html
+  <a href="https://www.example.com">Visita nuestro sitio</a>
+
+#### Etiquetas de multimedia:
+
+* **`<img>`**: Inserta una imagen.
+* **`<audio>`**: Inserta un archivo de audio.
+* **`<video>`**: Inserta un archivo de vídeo.
+
+#### Etiquetas de formularios:
+
+* **`<form>`**: Define un formulario.
+* **`<input>`**: Define un campo de entrada en un formulario (texto, contraseña, botón, etc.).
+* **`<textarea>`**: Define un área de texto en un formulario.
+* **`<button>`**: Define un botón.
+* **`<select>`**: Define una lista desplegable.
+* **`<option>`**: Define una opción en una lista desplegable.
+* **`<label>`**: Define una etiqueta para un elemento de formulario.
+* **`<fieldset>`**: Agrupa elementos relacionados en un formulario.
+* **`<legend>`**: Define un título para un `<fieldset>`.
+
+#### Etiquetas semánticas:
+
+* **`<article>`**: Define un artículo independiente.
+* **`<aside>`**: Define contenido aparte del contenido principal (ej. una barra lateral).
+* **`<footer>`**: Define el pie de página de un documento o sección.
+* **`<header>`**: Define la cabecera de un documento o sección.
+* **`<nav>`**: Define un conjunto de enlaces de navegación.
+* **`<section>`**: Define una sección en un documento.
+
 
 ## Clase 3 - 24/09/2024
-- Listas ordenadas y desordenadas
-- Enlaces: Relativos (Que está en los directorios en los que se encuentra mi sitio) y absolutas (se encuentra en lugares externos a nuestro directorio)
-- Elementos de línea y bloque: los de línea se sobreponen al lado del otro elemento de línea: ejemplo
-ElementoDeLinea1 ElementoDeLínea2
+### Listas en HTML
+Las listas en HTML te permiten organizar la información de forma estructurada. Hay dos tipos principales de listas:
 
-Los elementos de bloque ocupan el 100vw
-ElementoDeBloque1 <br>
-ElementoDeBloque2
+#### Listas desordenadas (`<ul>`)
+
+*   Se usan para elementos que no siguen un orden específico.
+*   Se definen con la etiqueta `<ul>`.
+*   Cada elemento de la lista se define con la etiqueta `<li>`.
+
+#### Listas ordenadas (`<ol>`)
+*   Se usan para elementos que siguen un orden secuencial.
+*   Se definen con la etiqueta `<ol>`.
+*   Cada elemento de la lista se define con la etiqueta `<li>`.
+
+### Enlaces
+
+Los enlaces son la esencia de la web, permitiendo a los usuarios navegar entre diferentes páginas y recursos. En HTML, se crean usando la etiqueta `<a>`, que significa "anchor" (ancla).
+
+#### Anatomía de un enlace
+
+* **`<a>`**: Etiqueta que define el enlace.
+  * **href**: Atributo que especifica la URL (dirección web) a la que apunta el enlace.
+  * **"Texto del enlace"**: El texto visible que los usuarios hacen clic para seguir el enlace.
+
+#### Tipos de enlaces
+
+1. **Absolutos**: Incluyen la URL completa.
+   * Ejemplo: `<a href="https://www.google.com">Google</a>`
+   
+2. **Relativos**: Hacen referencia a una ubicación relativa al documento actual.
+   * Ejemplo: `<a href="otra_pagina.html">Otra página</a>`
+   
+3. **En la misma página**: Apuntan a una sección específica dentro de la misma página usando un ancla (`#`).
+   * Ejemplo: `<a href="#seccion2">Ir a la sección 2</a>` (requiere un elemento con `id="seccion2"` en la página)
+
+4. **A recursos externos**: Pueden enlazar a archivos PDF, imágenes, etc.
+   * Ejemplo: `<a href="documento.pdf">Descargar PDF</a>`
+
+#### Atributos importantes
+
+* **target**: Controla cómo se abre el enlace:
+  * `_blank`: Abre el enlace en una nueva pestaña o ventana.
+  * `_self`: Abre el enlace en la misma pestaña o ventana (valor por defecto).
+  * `_parent`: Abre el enlace en el marco padre.
+  * `_top`: Abre el enlace en la ventana completa.
+  
+* **title**: Proporciona información adicional que se muestra al pasar el cursor sobre el enlace.
+
+* **download**: Indica al navegador que descargue el recurso enlazado en lugar de abrirlo.
+
+* **rel**: Define la relación entre el documento actual y el enlazado. Algunos valores comunes son:
+  * `noopener`: Mejora la seguridad al abrir enlaces en nuevas pestañas.
+  * `nofollow`: Indica a los motores de búsqueda que no sigan el enlace.
+
+
+### Elementos de Línea y de bloque
+
+En HTML, los elementos se clasifican principalmente en dos tipos: **elementos de bloque** y **elementos de línea**. Esta clasificación determina cómo se comportan visualmente en una página web.
+
+#### Elementos de bloque:
+
+* **Ocupan todo el ancho disponible:** Se extienden a lo largo de toda la línea, ocupando el espacio horizontal máximo.
+* **Forzan un salto de línea:** Siempre comienzan en una nueva línea y empujan el contenido que les sigue hacia abajo.
+* **Permiten definir ancho y alto:** Puedes controlar sus dimensiones mediante CSS.
+* **Ejemplos:** `<p>`, `<h1>` a `<h6>`, `<div>`, `<ul>`, `<ol>`, `<li>`, `<form>`, `<table>`
+
+#### Elementos de línea:
+
+* **Ocupan solo el espacio necesario:** Se ajustan al contenido que contienen, sin forzar saltos de línea.
+* **Se alinean uno junto al otro:** Permiten que otros elementos se coloquen en la misma línea.
+* **No se puede definir ancho o alto directamente:** Su tamaño se determina por el contenido.
+* **Ejemplos:** `<span>`, `<a>`, `<img>`, `<strong>`, `<em>`, `<input>`, `<button>`
+
+#### Aquí tienes una analogía:
+
+Imagina una página web como una hoja de papel. Los elementos de bloque son como párrafos escritos en líneas separadas, mientras que los elementos de línea son como palabras individuales dentro de una oración.
+
+### Diferencias clave:
+
+| Característica  | Elementos de bloque        | Elementos de línea      |
+|-----------------|----------------------------|-------------------------|
+| Ancho           | Ocupan todo el ancho disponible | Ocupan solo el espacio necesario |
+| Salto de línea  | Forzan un salto de línea    | No forzan un salto de línea |
+| Dimensiones     | Se puede definir ancho y alto | No se puede definir ancho o alto directamente |
+
+
 
 ## Clase 4 - 01/10/2024
 
