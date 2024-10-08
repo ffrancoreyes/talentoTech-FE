@@ -1,15 +1,18 @@
 # talentoTech-FE
-Hola, Soy ***Fabrizzio Franco Reyes***, creador de este repositorio donde se fueron subiendo todos los contenidos vistos durante la cursada del curso de desarollo web FrontEnd de Talento Tech.
+Hola, Soy ***Fabrizzio Franco Reyes***, estudiante de Ingeniería en sistemas de la información y creador de este repositorio donde se fueron subiendo todos los contenidos vistos durante la cursada del curso de desarollo web FrontEnd de Talento Tech.
 
-## Información Importante:
-- En caso de usar de forma didáctica este repositorio, dar créditos.
-### En caso de querer realizar un cambio al contenido
+## Temas vistos en la cursada
+- HTML (Clases 1 - 2 - 3 - 4)
+- CSS (Clases 5)
+
+## En caso de querer realizar un cambio al contenido
 - Envía la solicitud de Issue a través de Github
-o
 - Contáctame
     * Mail: ffrancoreyes@frba.utn.edu.ar
     * Teléfono: +541151489765
 
+## Información Importante:
+- En caso de usar de forma didáctica este repositorio, **dar créditos**.
 
 ## Clase 1 - 10/09/2024
 
