@@ -1,4 +1,15 @@
 # talentoTech-FE
+Hola, Soy ***Fabrizzio Franco Reyes***, creador de este repositorio donde se fueron subiendo todos los contenidos vistos durante la cursada del curso de desarollo web FrontEnd de Talento Tech.
+
+## Información Importante:
+- En caso de usar de forma didáctica este repositorio, dar créditos.
+### En caso de querer realizar un cambio al contenido
+- Envía la solicitud de Issue a través de Github
+o
+- Contáctame
+    * Mail: ffrancoreyes@frba.utn.edu.ar
+    * Teléfono: +541151489765
+
 
 ## Clase 1 - 10/09/2024
 
@@ -313,3 +324,261 @@ Los formularios en HTML son esenciales para interactuar con los usuarios, permit
 3.  **Etiquetas:**
 
     *   **`<label>`:** Crea una etiqueta para un elemento de entrada. Es importante asociar la etiqueta con el elemento de entrada mediante el atributo `for` en la etiqueta y el atributo `id` en el elemento de entrada.
+
+
+## Clase 5 - 08/10/2024
+
+CSS (Cascading Style Sheets) es un lenguaje utilizado para describir la presentación de un documento HTML. Mientras que HTML estructura el contenido de una página web, CSS controla cómo ese contenido se presenta visualmente al usuario, permitiendo separar el contenido de su presentación.
+
+### Sintaxis de CSS
+CSS está compuesto por **reglas** que indican qué estilo aplicar a qué elementos de HTML. Cada regla CSS tiene dos partes principales:
+- **Selector**: Indica a qué elementos HTML se aplicarán los estilos.
+- **Declaración**: Define el conjunto de estilos que se aplicarán, que a su vez se dividen en propiedades y valores.
+
+Ejemplo de una regla CSS:
+
+```css
+p {
+  color: blue;
+  font-size: 16px;
+}
+```
+
+En este caso, `p` es el selector que aplica estilos a todos los elementos `<p>` de la página. La declaración dentro de las llaves `{}` establece que el texto debe ser azul (`color: blue;`) y el tamaño de la fuente será de 16 píxeles (`font-size: 16px;`).
+
+### Selectores CSS
+Los selectores son esenciales en CSS, ya que determinan qué elementos del documento se estilizan. Algunos de los selectores más comunes son:
+
+- **Selector de etiqueta**: Se refiere a una etiqueta HTML específica (por ejemplo, `p`, `h1`, `div`).
+  ```css
+  h1 {
+    color: red;
+  }
+  ```
+
+- **Selector de clase**: Aplica estilos a elementos que tienen un atributo `class`. Utiliza un punto `.` antes del nombre de la clase.
+  ```css
+  .my-class {
+    margin: 10px;
+  }
+  ```
+
+- **Selector de ID**: Aplica estilos a un elemento con un atributo `id`. Usa una almohadilla `#` antes del nombre del ID.
+  ```css
+  #my-id {
+    background-color: yellow;
+  }
+  ```
+
+### Propiedades CSS comunes
+
+Algunas propiedades de estilo comunes que puedes utilizar en CSS incluyen:
+
+- **Color**: Define el color del texto.
+  ```css
+  color: red;
+  ```
+
+- **Background**: Controla el color o imagen de fondo de un elemento.
+  ```css
+  background-color: lightgray;
+  ```
+
+- **Margin y Padding**: Margin controla el espacio fuera del borde de un elemento, mientras que Padding controla el espacio dentro del borde, alrededor del contenido.
+  ```css
+  margin: 20px;
+  padding: 10px;
+  ```
+
+- **Font**: Establece el tamaño, tipo y estilo de la fuente.
+  ```css
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  ```
+
+### Cómo incluir CSS en HTML
+
+Hay varias formas de agregar CSS a un documento HTML:
+
+1. **CSS en línea**: Se aplica directamente dentro de un elemento HTML utilizando el atributo `style`.
+   ```html
+   <p style="color: blue;">Este es un texto en azul.</p>
+   ```
+
+2. **Estilos internos**: Se incluyen dentro de la etiqueta `<style>` en la sección `<head>` del documento HTML.
+   ```html
+   <style>
+     p {
+       color: blue;
+     }
+   </style>
+   ```
+
+3. **Estilos externos**: Se incluyen en un archivo separado con extensión `.css` y se vinculan en el HTML con la etiqueta `<link>`.
+   ```html
+   <link rel="stylesheet" href="styles.css">
+   ```
+
+### Cascada y Especificidad
+
+CSS utiliza un modelo en cascada para determinar qué reglas aplicar cuando hay múltiples estilos que coinciden con un mismo elemento. Los navegadores asignan prioridad a las reglas CSS en función de la **especificidad** de los selectores y la **proximidad** de la declaración.
+
+Por ejemplo:
+- Los estilos en línea tienen mayor prioridad que los estilos internos o externos.
+- Un `ID` tiene más peso que una `clase` o una etiqueta HTML.
+
+Aquí tienes una lista de propiedades CSS comunes junto con una breve descripción de su uso:
+
+
+### Algunas propiedades de CSS
+
+1. **color**  
+   Define el color del texto dentro de un elemento.
+   ```css
+   color: red;
+   ```
+
+2. **background-color**  
+   Establece el color de fondo de un elemento.
+   ```css
+   background-color: lightblue;
+   ```
+
+3. **font-size**  
+   Controla el tamaño del texto.
+   ```css
+   font-size: 18px;
+   ```
+
+4. **font-family**  
+   Define la fuente del texto, permitiendo elegir entre múltiples tipos de letra.
+   ```css
+   font-family: Arial, sans-serif;
+   ```
+
+5. **font-weight**  
+   Especifica el grosor de la fuente (por ejemplo, normal, bold).
+   ```css
+   font-weight: bold;
+   ```
+
+6. **text-align**  
+   Controla la alineación del texto (izquierda, derecha, centro o justificado).
+   ```css
+   text-align: center;
+   ```
+
+7. **margin**  
+   Define el espacio exterior alrededor de un elemento, creando espacio entre el borde del elemento y otros elementos.
+   ```css
+   margin: 10px;
+   ```
+
+8. **padding**  
+   Define el espacio interior de un elemento, entre el contenido y su borde.
+   ```css
+   padding: 20px;
+   ```
+
+9. **border**  
+   Establece el borde de un elemento, incluyendo su grosor, estilo y color.
+   ```css
+   border: 2px solid black;
+   ```
+
+10. **width**  
+    Define el ancho de un elemento.
+    ```css
+    width: 300px;
+    ```
+
+11. **height**  
+    Controla la altura de un elemento.
+    ```css
+    height: 200px;
+    ```
+
+12. **display**  
+    Define cómo se debe mostrar un elemento (por ejemplo, block, inline, none).
+    ```css
+    display: block;
+    ```
+
+13. **position**  
+    Controla la posición de un elemento en la página (relative, absolute, fixed, sticky).
+    ```css
+    position: absolute;
+    ```
+
+14. **top, right, bottom, left**  
+    Junto con `position`, define la ubicación de un elemento en relación a su contenedor.
+    ```css
+    top: 50px;
+    left: 20px;
+    ```
+
+15. **overflow**  
+    Define cómo se maneja el contenido desbordado que excede el área del contenedor (visible, hidden, scroll, auto).
+    ```css
+    overflow: hidden;
+    ```
+
+16. **z-index**  
+    Controla la capa de apilamiento de un elemento en la pantalla, permitiendo que algunos elementos se superpongan a otros.
+    ```css
+    z-index: 10;
+    ```
+
+17. **opacity**  
+    Establece el nivel de transparencia de un elemento, con valores de 0 (completamente transparente) a 1 (completamente opaco).
+    ```css
+    opacity: 0.8;
+    ```
+
+18. **cursor**  
+    Cambia el tipo de cursor cuando el usuario pasa el mouse sobre un elemento.
+    ```css
+    cursor: pointer;
+    ```
+
+19. **box-shadow**  
+    Aplica una sombra a un elemento.
+    ```css
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    ```
+
+20. **transition**  
+    Define las transiciones entre los cambios de estilo de un elemento.
+    ```css
+    transition: all 0.3s ease-in-out;
+    ```
+
+21. **transform**  
+    Aplica transformaciones como rotación, escalado o traslación a un elemento.
+    ```css
+    transform: rotate(45deg);
+    ```
+
+22. **flex**  
+    Permite la creación de diseños flexibles mediante la disposición de elementos hijos dentro de un contenedor.
+    ```css
+    display: flex;
+    ```
+
+23. **grid-template-columns**  
+    Define el número y el tamaño de las columnas en un contenedor de cuadrícula (Grid).
+    ```css
+    grid-template-columns: 1fr 2fr;
+    ```
+
+24. **justify-content**  
+    Alinea los elementos hijos horizontalmente en un contenedor flex o grid.
+    ```css
+    justify-content: space-between;
+    ```
+
+25. **align-items**  
+    Alinea los elementos hijos verticalmente en un contenedor flex o grid.
+    ```css
+    align-items: center;
+    ```
