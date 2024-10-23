@@ -1,0 +1,48 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px; /* Base para las unidades relativas */
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Sección de medidas absolutas */
+.absolutas {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px;
+}
+
+.absolutas .caja {
+    width: 300px;  /* Uso de píxeles (unidad absoluta) */
+    height: 200px; /* Uso de píxeles (unidad absoluta) */
+    background-color: #8e44ad;
+    color: white;
+    padding: 20px;
+    font-size: 14px; /* Tamaño fijo en píxeles */
+}
+
+/* Sección de medidas relativas */
+.relativas {
+    background-color: #e8f4ff;
+    padding: 2rem;  /* Uso de rem (unidad relativa al tamaño de la raíz) */
+    margin: 5%;     /* Margen relativo al tamaño del contenedor */
+}
+
+.relativas .caja {
+    width: 50%;      /* Uso de porcentaje (unidad relativa al contenedor) */
+    height: 10em;    /* Uso de em (relativa al tamaño de la fuente del contenedor) */
+    background-color: #27ae60;
+    color: white;
+    padding: 1.5rem; /* Uso de rem para un relleno consistente */
+    font-size: 1.2rem; /* Relativa al tamaño de la raíz */
+}
+ 

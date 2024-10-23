@@ -1,9 +1,6 @@
 # talentoTech-FE
 Hola, Soy ***Fabrizzio Franco Reyes***, estudiante de Ingeniería en Sistemas de la Información en la **Universidad Tecnológica Nacional** y creador de este repositorio donde se fueron subiendo todos los contenidos vistos durante la cursada del curso de desarollo web FrontEnd de **Talento Tech**.
 
-#### Temas vistos en la cursada
-- HTML (Clases 1 - 2 - 3 - 4)
-- CSS (Clases 5)
 
 #### En caso de querer realizar un cambio al contenido
 - Envía la solicitud de Issue a través de Github
@@ -14,8 +11,47 @@ Hola, Soy ***Fabrizzio Franco Reyes***, estudiante de Ingeniería en Sistemas de
 #### Información Importante:
 - En caso de usar de forma didáctica este repositorio, **dar créditos**.
 
-## Clase 1 - 10/09/2024
+## Indice:
+- [talentoTech-FE](#talentotech-fe)
+      - [En caso de querer realizar un cambio al contenido](#en-caso-de-querer-realizar-un-cambio-al-contenido)
+      - [Información Importante:](#información-importante)
+  - [Indice:](#indice)
+  - [Clase 1 - 10/09/2024](#clase-1---10092024)
+  - [Clase 2 - 17/09/2024](#clase-2---17092024)
+    - [Etiquetas básicas de HTML](#etiquetas-básicas-de-html)
+      - [Etiquetas esenciales:](#etiquetas-esenciales)
+      - [Etiquetas de contenido:](#etiquetas-de-contenido)
+      - [Etiquetas de listas:](#etiquetas-de-listas)
+      - [Etiquetas de tablas:](#etiquetas-de-tablas)
+      - [Etiquetas de enlaces:](#etiquetas-de-enlaces)
+    - [Selectores CSS](#selectores-css)
+    - [Propiedades CSS comunes](#propiedades-css-comunes)
+    - [Cómo incluir CSS en HTML](#cómo-incluir-css-en-html)
+    - [Cascada y Especificidad](#cascada-y-especificidad)
+    - [Algunas propiedades de CSS](#algunas-propiedades-de-css)
+  - [Clase 6 - 22/10/2024](#clase-6---22102024)
+    - [Unidades de medidas: Absolutas](#unidades-de-medidas-absolutas)
+      - [Principales Unidades Absolutas:](#principales-unidades-absolutas)
+    - [Unidades de medidas: Relativas](#unidades-de-medidas-relativas)
+      - [Principales Unidades Relativas:](#principales-unidades-relativas)
+    - [Comparativa Absolutas vs Relativas](#comparativa-absolutas-vs-relativas)
+    - [Uso de colores en css](#uso-de-colores-en-css)
+      - [Formas de Especificar Colores en CSS:](#formas-de-especificar-colores-en-css)
+      - [Ejemplo de uso de colores en CSS:](#ejemplo-de-uso-de-colores-en-css)
+    - [Consideraciones:](#consideraciones)
+    - [Uso de background:](#uso-de-background)
+      - [Principales Propiedades de Fondo en CSS:](#principales-propiedades-de-fondo-en-css)
+      - [Uso de la Propiedad `background` (shorthand):](#uso-de-la-propiedad-background-shorthand)
+      - [Ejemplo Completo con Colores e Imágenes de Fondo:](#ejemplo-completo-con-colores-e-imágenes-de-fondo)
+    - [Uso de fuentes y tipografías](#uso-de-fuentes-y-tipografías)
+    - [Propiedades Básicas de Fuentes en CSS:](#propiedades-básicas-de-fuentes-en-css)
+    - [Fuentes Web y Google Fonts:](#fuentes-web-y-google-fonts)
+      - [1. **Usar Google Fonts**:](#1-usar-google-fonts)
+      - [2. **@font-face** (Cargar Fuentes Personalizadas):](#2-font-face-cargar-fuentes-personalizadas)
+    - [Ejemplo Completo:](#ejemplo-completo)
 
+
+## Clase 1 - 10/09/2024
 En la primer clase de introducción se vieron cosas como instalar VSCODE - Extensiónes de VSCODE para el desarrollo web y estructura básica de una página (HTML).
 
 ## Clase 2 - 17/09/2024
@@ -585,3 +621,497 @@ Aquí tienes una lista de propiedades CSS comunes junto con una breve descripci�
     ```css
     align-items: center;
     ```
+## Clase 6 - 22/10/2024
+
+### Unidades de medidas: Absolutas
+
+Las **unidades absolutas** tienen un tamaño fijo e invariable, independientemente del contexto del diseño, como el tamaño de la pantalla o las preferencias del usuario. Son útiles cuando se desea un control exacto sobre las dimensiones, pero pueden ser menos flexibles en diseños responsivos.
+
+#### Principales Unidades Absolutas:
+- **`px` (píxeles)**: Un píxel es el tamaño más pequeño de una pantalla. Es la unidad más común para tamaños fijos.
+- **`cm` (centímetros)**: Unidad basada en el sistema métrico.
+- **`mm` (milímetros)**: También basada en el sistema métrico.
+- **`in` (pulgadas)**: 1 pulgada equivale a 96 píxeles.
+- **`pt` (puntos)**: Principalmente usado en impresión. 1 punto es 1/72 de una pulgada.
+- **`pc` (picas)**: 1 pica equivale a 12 puntos.
+
+> Estas unidades pueden ser útiles en contextos como impresoras, pero en pantallas, **`px`** es la más usada de las absolutas.
+
+### Unidades de medidas: Relativas
+Las **unidades relativas** son aquellas cuyo tamaño depende de algún otro valor, como el tamaño del elemento contenedor, la pantalla o las preferencias del usuario. Son más flexibles y recomendadas para diseño web responsivo, ya que permiten que el contenido se adapte a diferentes tamaños de pantalla o configuraciones.
+
+#### Principales Unidades Relativas:
+- **`em`**: Relativa al tamaño de la fuente del elemento padre. Si el elemento padre tiene un tamaño de fuente de 16px, 1 `em` será igual a 16px.
+- **`rem` (root em)**: Similar a `em`, pero relativa al tamaño de la fuente raíz del documento (`html`). Generalmente, el tamaño de fuente base es de 16px, por lo que 1 `rem` = 16px a menos que se haya modificado.
+- **`%` (porcentaje)**: Relativa al tamaño del elemento padre. Por ejemplo, si un ancho de un elemento se define como `50%`, será la mitad del tamaño de su contenedor.
+- **`vw` (viewport width)**: Relativa al ancho de la ventana del navegador. 1 `vw` es igual al 1% del ancho de la ventana.
+- **`vh` (viewport height)**: Relativa a la altura de la ventana del navegador. 1 `vh` es igual al 1% de la altura de la ventana.
+- **`vmin`** y **`vmax`**: Relativas al menor o mayor valor entre `vw` y `vh`. Es decir, `vmin` toma el valor más pequeño entre el ancho y la altura de la ventana, mientras que `vmax` toma el mayor.
+
+### Comparativa Absolutas vs Relativas
+- **Unidades absolutas** ofrecen control preciso, pero no se adaptan bien a cambios en pantallas o configuraciones de usuario.
+- **Unidades relativas** son más flexibles, facilitando el diseño responsivo, ya que permiten que el tamaño del contenido cambie en función del dispositivo o de otros factores.
+
+### Uso de colores en css
+
+En CSS, los **colores** son fundamentales para diseñar y dar estilo a los elementos HTML. Puedes definir colores de varias maneras, y se usan para propiedades como `color` (texto), `background-color` (fondo), `border-color`, entre otras.
+
+#### Formas de Especificar Colores en CSS:
+
+1. **Nombres de colores**:
+   CSS define una lista de nombres de colores predefinidos que puedes usar directamente.
+   - Ejemplo:
+     ```css
+     color: red; /* Nombre de color */
+     background-color: blue; /* Nombre de color */
+     ```
+   Algunos nombres comunes son: `red`, `blue`, `green`, `yellow`, `black`, `white`, `gray`, etc.
+
+2. **Colores Hexadecimales**:
+   Es una de las formas más usadas para definir colores en CSS. Los colores hexadecimales son representados con un `#` seguido de 6 dígitos hexadecimales, donde cada par representa el valor de rojo (RR), verde (GG), y azul (BB) en el formato `#RRGGBB`.
+   - Ejemplo:
+     ```css
+     color: #ff0000; /* Rojo puro */
+     background-color: #00ff00; /* Verde puro */
+     ```
+   Puedes también usar versiones cortas de los colores hexadecimales, como `#f00` para `#ff0000`.
+
+3. **RGB (Red, Green, Blue)**:
+   Otra forma común de definir colores es usando la función **`rgb()`**, donde los valores de **rojo (R)**, **verde (G)** y **azul (B)** van de 0 a 255.
+   - Ejemplo:
+     ```css
+     color: rgb(255, 0, 0); /* Rojo puro */
+     background-color: rgb(0, 255, 0); /* Verde puro */
+     ```
+
+4. **RGBA (RGB con Opacidad)**:
+   Similar a `rgb()`, pero incluye un cuarto valor que representa la **opacidad (alpha)**. El valor de alpha va de 0 (completamente transparente) a 1 (completamente opaco).
+   - Ejemplo:
+     ```css
+     color: rgba(255, 0, 0, 0.5); /* Rojo al 50% de opacidad */
+     background-color: rgba(0, 0, 255, 0.7); /* Azul al 70% de opacidad */
+     ```
+
+5. **HSL (Hue, Saturation, Lightness)**:
+   La función **`hsl()`** define colores utilizando tres parámetros:
+   - **Hue** (matiz): Un valor entre 0 y 360 que representa el color en el espectro (0 = rojo, 120 = verde, 240 = azul).
+   - **Saturation** (saturación): Un porcentaje que determina la intensidad del color. 100% es el color completamente saturado, 0% es gris.
+   - **Lightness** (luminosidad): Otro porcentaje que determina la claridad o oscuridad del color. 0% es negro, 100% es blanco.
+   - Ejemplo:
+     ```css
+     color: hsl(0, 100%, 50%); /* Rojo saturado */
+     background-color: hsl(120, 100%, 50%); /* Verde puro */
+     ```
+
+6. **HSLA (HSL con Opacidad)**:
+   Similar a `hsl()`, pero con un cuarto parámetro para la opacidad.
+   - Ejemplo:
+     ```css
+     color: hsla(0, 100%, 50%, 0.5); /* Rojo saturado al 50% de opacidad */
+     background-color: hsla(240, 100%, 50%, 0.3); /* Azul saturado al 30% de opacidad */
+     ```
+
+#### Ejemplo de uso de colores en CSS:
+
+```css
+body {
+    background-color: #f4f4f4; /* Color de fondo usando hexadecimal */
+    color: rgb(33, 33, 33); /* Color del texto usando RGB */
+}
+
+h1 {
+    color: hsl(240, 100%, 50%); /* Azul saturado con HSL */
+}
+
+p {
+    background-color: rgba(255, 165, 0, 0.7); /* Naranja translúcido con RGBA */
+    color: white; /* Texto blanco */
+}
+```
+
+### Consideraciones:
+- **Contraste**: Asegúrate de usar combinaciones de colores con suficiente contraste, especialmente para el texto sobre fondos, para garantizar la accesibilidad.
+- **Transparencia**: Usar **rgba** o **hsla** para colores con transparencia permite superponer elementos de manera más creativa.
+- **Variables CSS**: Es posible definir colores como variables para mantener un diseño consistente.
+
+
+### Uso de background:
+
+En CSS, la propiedad `background` se utiliza para aplicar fondos a los elementos HTML. Los fondos pueden ser colores, imágenes o incluso una combinación de ambos. CSS proporciona varias propiedades relacionadas para controlar los aspectos de los fondos, como su repetición, tamaño, posición, etc.
+
+#### Principales Propiedades de Fondo en CSS:
+
+1. **`background-color`**:
+   Esta propiedad define el **color** de fondo de un elemento.
+   - Ejemplo:
+     ```css
+     div {
+         background-color: #f0f0f0; /* Fondo gris claro */
+     }
+     ```
+
+2. **`background-image`**:
+   Esta propiedad permite establecer una **imagen** como fondo del elemento.
+   - Ejemplo:
+     ```css
+     body {
+         background-image: url('imagen-de-fondo.jpg');
+     }
+     ```
+
+3. **`background-repeat`**:
+   Controla cómo se repite la imagen de fondo.
+   - Valores:
+     - `repeat`: Repite la imagen en ambas direcciones (valor por defecto).
+     - `no-repeat`: No repite la imagen.
+     - `repeat-x`: Repite la imagen solo horizontalmente.
+     - `repeat-y`: Repite la imagen solo verticalmente.
+   - Ejemplo:
+     ```css
+     div {
+         background-image: url('patron.png');
+         background-repeat: repeat-x; /* Repite solo en el eje horizontal */
+     }
+     ```
+
+4. **`background-position`**:
+   Establece la posición inicial de la imagen de fondo. Los valores más comunes son:
+   - Palabras clave como `left`, `right`, `top`, `bottom`, `center`.
+   - Coordenadas como `20px 40px` o porcentajes `50% 50%`.
+   - Ejemplo:
+     ```css
+     div {
+         background-image: url('imagen.jpg');
+         background-position: center; /* Imagen centrada */
+     }
+     ```
+
+5. **`background-size`**:
+   Define el tamaño de la imagen de fondo.
+   - Valores:
+     - `auto`: Mantiene el tamaño original de la imagen (valor por defecto).
+     - `cover`: Escala la imagen para cubrir todo el área del elemento, puede recortar la imagen si no encaja perfectamente.
+     - `contain`: Escala la imagen para que sea completamente visible dentro del elemento, sin recortes.
+     - Especificaciones de tamaño como `100px 200px` o porcentajes como `100%`.
+   - Ejemplo:
+     ```css
+     div {
+         background-image: url('imagen.jpg');
+         background-size: cover; /* La imagen cubrirá toda la caja */
+     }
+     ```
+
+6. **`background-attachment`**:
+   Controla si la imagen de fondo se desplaza junto con el contenido o se mantiene fija.
+   - Valores:
+     - `scroll`: La imagen se desplaza con el contenido (valor por defecto).
+     - `fixed`: La imagen de fondo permanece fija cuando se desplaza la página.
+     - `local`: La imagen se desplaza dentro del contenedor si tiene scroll.
+   - Ejemplo:
+     ```css
+     body {
+         background-image: url('imagen-de-fondo.jpg');
+         background-attachment: fixed; /* Fondo fijo al hacer scroll */
+     }
+     ```
+
+7. **`background-clip`**:
+   Define hasta dónde se extiende el fondo dentro del contenedor.
+   - Valores:
+     - `border-box`: El fondo se extiende hasta el borde del contenedor (valor por defecto).
+     - `padding-box`: El fondo se extiende solo hasta el borde del área de padding.
+     - `content-box`: El fondo se extiende solo dentro del área de contenido.
+   - Ejemplo:
+     ```css
+     div {
+         background-color: yellow;
+         background-clip: content-box; /* El color de fondo solo está en el contenido */
+     }
+     ```
+
+8. **`background-origin`**:
+   Determina el área de posicionamiento del fondo.
+   - Valores:
+     - `border-box`: Posiciona el fondo desde el borde.
+     - `padding-box`: Posiciona desde el padding.
+     - `content-box`: Posiciona desde el contenido.
+   - Ejemplo:
+     ```css
+     div {
+         background-image: url('imagen.jpg');
+         background-origin: padding-box; /* La imagen comienza en el área de padding */
+     }
+     ```
+
+#### Uso de la Propiedad `background` (shorthand):
+Es posible definir todos los aspectos del fondo en una sola propiedad utilizando la propiedad abreviada `background`.
+
+**Ejemplo completo**:
+```css
+div {
+    background: url('imagen.jpg') no-repeat center/cover fixed #333;
+    /* Imagen centrada, no repetida, tamaño cubre todo el contenedor, fondo fijo y color de respaldo gris oscuro */
+}
+```
+
+#### Ejemplo Completo con Colores e Imágenes de Fondo:
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Fondos en CSS</title>
+    <style>
+        body {
+            background-color: #e0e0e0; /* Fondo de color gris claro */
+            font-family: Arial, sans-serif;
+        }
+
+        .fondo-imagen {
+            background-image: url('https://via.placeholder.com/800');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 400px;
+            margin: 20px 0;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fondo-color {
+            background-color: #3498db; /* Color de fondo azul */
+            padding: 50px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="fondo-color">
+        <h1>Sección con Fondo de Color</h1>
+        <p>Esta sección tiene un fondo de color sólido.</p>
+    </section>
+
+    <section class="fondo-imagen">
+        <h1>Sección con Fondo de Imagen</h1>
+    </section>
+
+</body>
+</html>
+```
+
+### Uso de fuentes y tipografías
+
+En CSS, las **fuentes** y **tipografías** son esenciales para el diseño y la legibilidad del contenido en una página web. CSS ofrece varias propiedades para controlar el estilo de las fuentes, como el tipo de letra, el tamaño, el grosor, la altura de línea y más. A continuación te explico las propiedades principales relacionadas con las fuentes y la tipografía:
+
+### Propiedades Básicas de Fuentes en CSS:
+
+1. **`font-family`**:
+   - Define la **familia tipográfica** que se usará en un texto.
+   - Se puede especificar una lista de familias de fuentes de reserva en caso de que la primera no esté disponible.
+   - Es recomendable incluir tanto **fuentes personalizadas** como una **fuente genérica** (serif, sans-serif, monospace, etc.).
+   - Ejemplo:
+     ```css
+     body {
+         font-family: 'Arial', 'Helvetica', sans-serif;
+     }
+     ```
+   En este ejemplo, se intentará usar primero `Arial`, luego `Helvetica`, y si no están disponibles, se usará cualquier fuente **sans-serif**.
+
+2. **`font-size`**:
+   - Define el **tamaño** del texto.
+   - Puede expresarse en varias unidades:
+     - **Absolutas**: `px` (píxeles), `pt` (puntos).
+     - **Relativas**: `em`, `rem`, `%`, `vw` (anchura del viewport), etc.
+   - Ejemplo:
+     ```css
+     h1 {
+         font-size: 2em; /* Tamaño del texto es 2 veces el tamaño de la fuente del contenedor */
+     }
+     ```
+
+3. **`font-weight`**:
+   - Controla el **grosor** de la fuente.
+   - Valores comunes:
+     - **Normal**: `normal` (400).
+     - **Negrita**: `bold` (700).
+     - Números de 100 a 900 (donde 400 es el normal y 700 es negrita).
+   - Ejemplo:
+     ```css
+     p {
+         font-weight: bold; /* Negrita */
+     }
+     ```
+
+4. **`font-style`**:
+   - Controla el **estilo** de la fuente, como **cursiva** o normal.
+   - Valores:
+     - `normal`: Texto sin cursiva.
+     - `italic`: Texto en cursiva.
+     - `oblique`: Texto inclinado.
+   - Ejemplo:
+     ```css
+     em {
+         font-style: italic; /* Texto en cursiva */
+     }
+     ```
+
+5. **`line-height`**:
+   - Establece la **altura de línea**, es decir, el espacio entre líneas de texto.
+   - Puede ser un número (que multiplica el tamaño de la fuente), un valor en unidades, o un porcentaje.
+   - Ejemplo:
+     ```css
+     p {
+         line-height: 1.5; /* 1.5 veces la altura de la fuente */
+     }
+     ```
+
+6. **`text-align`**:
+   - Controla la **alineación del texto** dentro de su contenedor.
+   - Valores comunes:
+     - `left`: Alinea a la izquierda (valor por defecto en la mayoría de los navegadores).
+     - `center`: Centra el texto.
+     - `right`: Alinea a la derecha.
+     - `justify`: Justifica el texto (alineado a ambos lados).
+   - Ejemplo:
+     ```css
+     h1 {
+         text-align: center; /* Texto centrado */
+     }
+     ```
+
+7. **`text-transform`**:
+   - Controla la **transformación del texto**, como convertir todo a mayúsculas, minúsculas o la capitalización de la primera letra de cada palabra.
+   - Valores:
+     - `uppercase`: Convierte todo el texto a mayúsculas.
+     - `lowercase`: Convierte todo el texto a minúsculas.
+     - `capitalize`: Pone en mayúscula la primera letra de cada palabra.
+   - Ejemplo:
+     ```css
+     h1 {
+         text-transform: uppercase; /* Todo en mayúsculas */
+     }
+     ```
+
+8. **`letter-spacing`**:
+   - Ajusta el **espaciado entre letras**.
+   - Se puede aumentar o disminuir usando valores positivos o negativos.
+   - Ejemplo:
+     ```css
+     h1 {
+         letter-spacing: 2px; /* Aumenta el espacio entre letras */
+     }
+     ```
+
+9. **`text-decoration`**:
+   - Define decoraciones como **subrayado**, tachado o sobrelineado.
+   - Valores comunes:
+     - `underline`: Subraya el texto.
+     - `line-through`: Tacha el texto.
+     - `none`: Sin decoración (para eliminar subrayados en enlaces, por ejemplo).
+   - Ejemplo:
+     ```css
+     a {
+         text-decoration: none; /* Sin subrayado en enlaces */
+     }
+     ```
+
+### Fuentes Web y Google Fonts:
+Para utilizar fuentes que no están instaladas en el sistema del usuario, es común utilizar **Google Fonts** o **@font-face** para cargar fuentes externas.
+
+#### 1. **Usar Google Fonts**:
+   - Google Fonts es un servicio que proporciona una amplia variedad de fuentes para usar en la web.
+   - Para usar una fuente, puedes importar una fuente de Google en tu HTML de la siguiente manera:
+   - Ejemplo:
+     ```html
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+     ```
+   - Luego, en el CSS:
+     ```css
+     body {
+         font-family: 'Roboto', sans-serif;
+     }
+     ```
+
+#### 2. **@font-face** (Cargar Fuentes Personalizadas):
+   - Con `@font-face`, puedes cargar una fuente personalizada desde tu servidor.
+   - Ejemplo:
+     ```css
+     @font-face {
+         font-family: 'MiFuente';
+         src: url('mifuente.woff2') format('woff2'),
+              url('mifuente.woff') format('woff');
+     }
+
+     body {
+         font-family: 'MiFuente', sans-serif;
+     }
+     ```
+
+### Ejemplo Completo:
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Fuentes y Tipografías</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        em {
+            font-style: italic;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplo de Tipografías</h1>
+    <p>Este es un ejemplo del uso de la tipografía <strong>Roboto</strong> obtenida de Google Fonts. Puedes aplicar diferentes <em>estilos</em> y tamaños de fuente para mejorar la legibilidad y estética del contenido.</p>
+    <p>Visita <a href="https://fonts.google.com/" target="_blank">Google Fonts</a> para encontrar más opciones de fuentes.</p>
+</body>
+</html>
+```
+
+
+
+

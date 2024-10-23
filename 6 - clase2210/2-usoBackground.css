@@ -1,0 +1,58 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fondo del encabezado con una imagen que cubre el área */
+.fondo-header {
+    background-image: url('https://picsum.photos/1200/400');
+    background-size: cover; /* La imagen cubre todo el área */
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Sección con fondo de color sólido */
+.fondo-color {
+    background-color: #3498db; /* Color de fondo azul */
+    padding: 50px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Sección con fondo de imagen que cubre el área */
+.fondo-imagen {
+    background-image: url('https://picsum.photos/800/600');
+    background-size: cover; /* La imagen cubre todo el área */
+    background-position: center;
+    padding: 100px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Sección con un patrón de fondo repetido */
+.fondo-patron {
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/symphony.png');
+    background-repeat: repeat; /* El patrón se repite */
+    padding: 100px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Sección con fondo fijo al hacer scroll */
+.fondo-fixed {
+    background-image: url('https://picsum.photos/1200/800');
+    background-attachment: fixed; /* El fondo no se mueve al hacer scroll */
+    background-size: cover;
+    padding: 100px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
